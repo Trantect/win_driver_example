@@ -1,0 +1,61 @@
+{
+  "abi-return-struct-as-int": true,
+  "arch": "x86",
+  "cpu": "pentium4",
+  "crt-static-allows-dylibs": true,
+  "crt-static-respected": true,
+  "data-layout": "e-m:x-p:32:32-i64:64-f80:32-n8:16:32-a:0:32-S32",
+  "dll-prefix": "",
+  "dll-suffix": ".sys",
+  "dynamic-linking": true,
+  "emit-debug-gdb-scripts": false,
+  "env": "msvc",
+  "exe-suffix": ".exe",
+  "executables": true,
+  "has-elf-tls": false,
+  "is-builtin": true,
+  "is-like-msvc": true,
+  "is-like-windows": true,
+  "linker-flavor": "msvc",
+  "llvm-target": "i686-pc-windows-msvc",
+  "max-atomic-width": 64,
+  "os": "windows",
+  "pre-link-args": {
+    "msvc": [
+      "/NOLOGO",
+      "/NODEFAULTLIB",
+      "/SUBSYSTEM:NATIVE",
+      "/DRIVER",
+      "/RELEASE",
+      "/NXCOMPAT",
+      "/DYNAMICBASE",
+      "/INCREMENTAL:NO",
+      "/MANIFEST:NO"
+    ]
+  },
+    "post-link-args": {
+    "msvc": [
+      "/OPT:REF,ICF",
+      "/noimplib",
+      "/ENTRY:DriverEntry",
+      "/MERGE:.edata=.rdata",
+      "/MERGE:.rustc=.data",
+      "/INTEGRITYCHECK"
+    ]
+  },
+  "requires-uwtable": true,
+  "staticlib-prefix": "",
+  "staticlib-suffix": ".lib",
+  "target-c-int-width": "32",
+  "target-endian": "little",
+  "target-family": "windows",
+  "target-pointer-width": "32",
+  "vendor": "pc",
+  "features": "-mmx,-sse,-sse2,-sse3,-ssse3,-sse4.1,-sse4.2,-3dnow,-3dnowa,-avx,-avx2,+soft-float",
+  "code-model": "kernel",
+  "relocation-model": "dynamic-no-pic",
+  "disable-redzone": true,
+  "eliminate-frame-pointer": true,
+  "panic-strategy": "abort"
+
+}
