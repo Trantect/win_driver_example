@@ -14,7 +14,10 @@ path = "./win-kmd-native-lib"
 [dependencies.winapi]
 git = "https://github.com/Trantect/winapi-rs.git"
 branch = "feature/km"
-features = ["fwp","ndis","impl-default","debug","ntstatus","dpfilter","ioapiset","ntddstor","winioctl","fltkernel"]
+features = [
+    "wdm",
+    "ntstatus",
+]
 
 [lib]
 crate-type = ["dylib"]
