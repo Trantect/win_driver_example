@@ -7,7 +7,6 @@ version = "0.1.0"
 [dependencies.win-kmd-alloc]
 git = "https://github.com/woodgear/win-kmd-alloc.git"
 branch = "feature/km"
-recv = "922653e406a35f91a6c240062799f92d803666a6"
 
 [dependencies.win-kmd-native-lib]
 path = "./win-kmd-native-lib"
@@ -15,7 +14,6 @@ path = "./win-kmd-native-lib"
 [dependencies.winapi]
 git = "https://github.com/Trantect/winapi-rs.git"
 branch = "feature/km"
-rev = "ef14b401e6c3c81be96c83b67039d01995104c20"
 features = ["fwp","ndis","impl-default","debug","ntstatus","dpfilter","ioapiset","ntddstor","winioctl","fltkernel"]
 
 [lib]
